@@ -5,15 +5,15 @@ import { UidContext } from './components/AppContext';
 import { useDispatch} from 'react-redux'
 import { getUser } from './actions/user.actions';
 
-const App = () => { 
+const App = () => {    
    const [uid,setUid] = useState(null); 
    const dispatch=useDispatch(); 
 
    useEffect(()=> {
-       const fetchToken = async() => {
+       const fetchToken = async() => { console.log(`http://localhost:${process.env.PORT}/jwtid`)
            await axios({
-               method:"get", 
-               url: `${process.env.REACT_APP_API_URL}jwtid` , 
+               method:"get",// http://localhost:5000/
+               url: `http://localhost:${process.env.PORT}/jwtid` , 
                 withCredentials  : true , 
            })
            .then((res)=> {

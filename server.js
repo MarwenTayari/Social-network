@@ -33,8 +33,8 @@ app.get('/jwtid',requireAuth , (req,res)=> {
 }); 
  
 //routes 
-app.use('/api/user' , userRoutes) ; 
-app.use('/api/post' , postRoutes) ; 
+app.use('/api/user' , userRoutes) ;  
+app.use('/api/post' , postRoutes) ;   
 
 //serve a static assets if in production 
 if(process.env.NODE_ENV ==='production') {
