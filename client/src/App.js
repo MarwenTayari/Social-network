@@ -10,10 +10,10 @@ const App = () => {
    const dispatch=useDispatch(); 
 
    useEffect(()=> {
-       const fetchToken = async() => { console.log(`http://localhost:${process.env.PORT}/jwtid`)
+       const fetchToken = async() => { console.log(`${REACT_APP_API_URL}`)
            await axios({
                method:"get",// http://localhost:5000/
-               url: `http://localhost:${process.env.PORT}/jwtid` , 
+               url: `${REACT_APP_API_URL}jwtid` , 
                 withCredentials  : true , 
            })
            .then((res)=> {
