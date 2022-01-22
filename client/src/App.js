@@ -7,14 +7,14 @@ import { getUser } from './actions/user.actions';
 
 const App = () => {    
    const [uid,setUid] = useState(null); 
-   const dispatch=useDispatch(); 
+   const dispatch=useDispatch();  
 
    useEffect(()=> {
-       const fetchToken = async() => { console.log(`Le port est ${process.env.PORT}`)
+       const fetchToken = async() => { 
            await axios({
-               method:"get",// http://localhost:5000/
+               method:"get",
                url: `${process.env.REACT_APP_API_URL}jwtid` , 
-                withCredentials  : true , 
+               withCredentials  : true , 
            })
            .then((res)=> {
                setUid(res.data); 
