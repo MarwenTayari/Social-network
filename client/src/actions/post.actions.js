@@ -30,7 +30,7 @@ export const getPost = (num) => {
         })
         .catch((err)=> console.log(err)) 
     }
-}
+} 
 
 export const addPost = (data) => {
     return (dispatch) => { 
