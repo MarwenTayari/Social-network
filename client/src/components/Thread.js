@@ -27,7 +27,7 @@ const Thread = () => {
     return ()=> window.removeEventListener('scroll', loadMore); 
    }, [loadPost, dispatch])
 
-    return (
+    return ( 
         <div className="thread-container">
             <ul> 
                 {!isEmpty(posts[0]) && 
