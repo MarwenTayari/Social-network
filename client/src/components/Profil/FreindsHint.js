@@ -29,7 +29,6 @@ const FreindsHint = () => {
                 array.length = 1 ; 
             } else array.length = 0 ; 
             setFriendsHint(array); 
-            console.log('array', array)
           }
 
        if(playOnce && !isEmpty(usersData[0]) && !isEmpty(userData._id)){
