@@ -8,6 +8,6 @@ https://social-network-raccount.herokuapp.com/
 Getting Started : 
 environement : Node v14.17.6 
 
-Installing : npm install 
+Installing : npm install  
 
 Runing : npm run dev 
